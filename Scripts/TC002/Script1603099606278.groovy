@@ -28,7 +28,7 @@ WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/inp
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), 'RigbBhfdqODKcAsiUrg+1Q==')
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
 WebUI.closeBrowser()
 
