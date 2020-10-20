@@ -20,14 +20,21 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.url)
 
+
+
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
 
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Demo account_form-control'))
 
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), GlobalVariable.username)
+for(def rowNum=1;rowNum<=findTestData("datatest_1").getRowNumbers();rowNum++){
 
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), GlobalVariable.password)
+//WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), Username)
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), findTestData("datatest_1").getValue(1,rowNum))
 
+//WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), Password)
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), findTestData("datatest_1").getValue(2,rowNum))
+Thread.sleep(3000)
+}
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
 WebUI.closeBrowser()

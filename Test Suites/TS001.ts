@@ -28,6 +28,18 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/TC002</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8db39b34-c188-4ff9-925d-123637a52963</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>64e86410-ccde-49a9-97bd-66afed40f915</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>1934b8ca-fb42-479c-9823-fe19ca98f888</guid>
